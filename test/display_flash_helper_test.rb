@@ -33,4 +33,13 @@ describe "ApplicationHelper" do
   	self.expects(:content_tag).with(:div, "This is an error", :id => "flash", :class => "flash error")
   	display_flash
   end
+  
+  it "should create multiple flash messages if multiple set" do
+    flash[:error] = "This is an error"
+    flash[:notice] = "This is a notice"
+    self.expects(:content_tag).with(:div, "This is an error", :id => "flash", :class => "flash error")
+  	self.expects(:content_tag).with(:div, "This is a notice", :id => "flash", :class => "flash notice")
+  	display_flash
+  end
+
 end
