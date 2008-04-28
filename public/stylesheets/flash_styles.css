@@ -1,4 +1,4 @@
-.flash {
+#flash {
   font-size: 123.1%;
   font-weight: bold;
   margin-bottom: 10px;
@@ -6,19 +6,19 @@
   padding-left: 20px;
 }
 
-.notice {
+#flash .notice {
   border: 1px solid #000;
   color: #fff;
   background: green url(/images/icons/accept.gif) no-repeat left center;
 }
 
-.warning {
+#flash .warning {
   border: 1px solid #000;
   color: #fff;
   background: red url(/images/icons/exclamation.gif) no-repeat left center;
 }
 
-.message {
+#flash .message {
   border: 1px solid #000;
   color: #666;
   background: yellow url(/images/icons/error.gif) no-repeat left center;

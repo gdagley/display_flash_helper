@@ -24,8 +24,9 @@ In your view (layout or template):
   <%= display_flash %>
   
 And it will create:
-
-  <div id="flash" class="flash notice">Something has been done.</div>
+  <div id="flash">
+    <div class="notice">Something has been done.</div>
+  </div>
 
 Silk Icons from http://famfamfam.com/lab/icons/silk/, released under the Creative Commons Attribution 2.5 License
 Copyright (c) 2008 Geoffrey Dagley, released under the MIT license
