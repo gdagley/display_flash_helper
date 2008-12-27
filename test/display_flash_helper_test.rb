@@ -16,10 +16,10 @@ describe "ApplicationHelper" do
   	display_flash.should.be.empty
   end
 
-  it "should create warning flash" do
-  	flash[:warning] = "This is a warning"
-  	self.expects(:content_tag).with(:div, "This is a warning", :class => "warning").returns("WARNING")
-    self.expects(:content_tag).with(:div, "WARNING", :id => "flash")
+  it "should create success flash" do
+  	flash[:success] = "This is a success"
+  	self.expects(:content_tag).with(:div, "This is a success", :class => "success").returns("SUCCESS")
+    self.expects(:content_tag).with(:div, "SUCCESS", :id => "flash")
   	display_flash
   end
 
@@ -27,6 +27,13 @@ describe "ApplicationHelper" do
   	flash[:notice] = "This is a notice"
   	self.expects(:content_tag).with(:div, "This is a notice", :class => "notice").returns("NOTICE")
     self.expects(:content_tag).with(:div, "NOTICE", :id => "flash")
+  	display_flash
+  end
+
+  it "should create warning flash" do
+  	flash[:warning] = "This is a warning"
+  	self.expects(:content_tag).with(:div, "This is a warning", :class => "warning").returns("WARNING")
+    self.expects(:content_tag).with(:div, "WARNING", :id => "flash")
   	display_flash
   end
 

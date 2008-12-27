@@ -1,6 +1,6 @@
 module DisplayFlashHelper
   def display_flash
-    flash_types = [:error, :warning, :notice ]
+    flash_types = [:error, :warning, :notice, :success ]
 
     messages = ((flash_types & flash.keys).collect do |key|
       content_tag(:div, flash[key], :class => "#{key}")

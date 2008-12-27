@@ -2,7 +2,7 @@ DisplayFlashHelper
 ==================
 
 Just a little helper to make it easier to display notice, warning, and error messages. It will only 
-show flash[:notice], flash[:warning], or flash[:error] messages.
+show flash[:success], flash[:notice], flash[:warning], or flash[:error] messages.
 
 There are some default styles and icons that can be used.  
 
